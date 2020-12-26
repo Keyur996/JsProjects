@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../bootstrap4/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../font-awsome-5/css/all.min.css">
+   <title>Document</title>
+</head>
+<body>
+   <div class="container justify-content-center">   
+      <div class="row">
+         <div class="col-lg-6 col-md-8 col-sm-10 offset-lg-3">
+            <div class="card mt-2">
+               <div class="card-header text-white" style="background-color: #2196f3;">
+                  <h4>
+                     <span><i class="fas fa-tasks"></i></span>
+                     Add Task
+                  </h4>
+               </div>
+               <div class="card-body">
+                  <form id="form" method="POST">
+                     <div class="form-group input-group">
+                        <div for="task" class="input-group-prepend">
+                           <span class="input-group-text"><i class="fas fa-check" aria-hidden="true"></i></span>
+                        </div>
+                        <input id="task" type="text" class="form-control input-group-append" name="task" required>&nbsp;&nbsp;
+                        <input type="submit" value="ADD TASK" class="btn btn-outline-primary" id="add">        
+                     </div>
+                  </form>          
+               </div> 
+            </div>
+         </div> 
+         <div class="col-lg-6 col-md-8 col-sm-10 offset-lg-3">
+            <div class="card mt-2">
+               <div class="card-header text-white" style="background-color: #ffd54f;">
+                  <h4>
+                     <span><i class="fas fa-filter"></i></span>
+                     Filter Task
+                  </h4>
+               </div>
+               <div class="card-body">
+                  <div class="form-group input-group">
+                     <div for="filter" class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-check" aria-hidden="true"></i></span>
+                     </div>
+                     <input id="filter" type="text" class="form-control input-group-append" name="filter">   
+                  </div>
+                  <hr/>
+                  <ul class="list-group"></ul>  
+                  <button class="btn btn-outline-primary mt-2" id="clear">CLEAR</button>  
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="app.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="../bootstrap4/js/bootstrap.min.js"></script> 
+</body>
+</html>
