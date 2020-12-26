@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
 :root {
    --success-color: rgb(132, 240, 132);
@@ -79,6 +79,10 @@ h2{
    left: 0;
    padding: 0;
    margin-bottom: 0px;
+}
+
+.form-control.error small{
+   visibility: visible;
 }
 
 .btn {
