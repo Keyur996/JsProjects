@@ -23,7 +23,7 @@ game.addEventListener('mousedown', function (e) {
 guessBtn.addEventListener('click', function () {
    //validate
    let guess = parseInt(guessInput.value);
-   if (isNaN(guess) || guess < min || guess >= max) {
+   if (isNaN(guess) || guess < min || guess > max) {
       //set Message
       setMessage(`Please Enter Number Between ${min} and ${max}`, 'red');
    }else if (guess === answer) {
